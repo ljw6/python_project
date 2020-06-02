@@ -18,7 +18,7 @@ class window2(wx.Frame):
         big_box = wx.BoxSizer(wx.VERTICAL)
 
         self.logo = wx.StaticBitmap(self, wx.ID_ANY,
-                                    wx.Bitmap(u"C:\\Users\\吕佳伟\\Pictures\\logo.bmp", wx.BITMAP_TYPE_ANY),
+                                    wx.Bitmap(u"logo.bmp", wx.BITMAP_TYPE_ANY),
                                     wx.DefaultPosition, wx.DefaultSize, 0)
         big_box.Add(self.logo, 0, wx.ALL, 5)
 
