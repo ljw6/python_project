@@ -30,9 +30,9 @@ def proces(srt):
     y = np.matmul(x_lable,w)+b
     f = abs(y-1)
     if f <0.5:
-        s = "小心标题党！！！"
+        s = "妥妥的正宗新闻！"
     elif f < 0.7:
         s ="可能是标题党，请注意！"
     else:
-        s ="妥妥的正宗新闻！"
+        s ="小心标题党！！！"
     return s
