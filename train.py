@@ -35,9 +35,10 @@ def modle(x,w,b):
 W = tf.Variable(tf.random.normal([20,1],mean=0.0,stddev=1.0,dtype=tf.float32))
 B = tf.Variable(tf.zeros(1),dtype=tf.float32)
 
+#(超参)
 train_epochs = 50#迭代次数
 learning_rate = 0.01#学习率
-batch_size = 10#批样本数(超参)
+batch_size = 10#批样本数
 
 def loss(x,y,w,b):
     error = modle(x,w,b)-y#计算模型预测值和标签
